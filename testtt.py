@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from os import path
 from typing import List
 
-
+TOKEN = os.environ['TOKEN']
 client = discord.Client()
 List = [1,2,3]
 List2 = [1,2]
@@ -151,6 +151,7 @@ async def on_message(message):
 
 
 #機器人token讀檔
-load_dotenv('1.env')
-client.run(os.getenv('token'))
+# load_dotenv('1.env')
+# client.run(os.getenv('token'))
+client.run(TOKEN)
 # client.run('ODg3MzI4Mzc3ODU2NDYyODY5.YUCi8w.Q1G7knLdK6IaR0r1RQySJSsLVNw')
